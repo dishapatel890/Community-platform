@@ -1,0 +1,117 @@
+.body.active-modal{
+    overflow-y: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    padding: 4%;
+    clear: both;
+    position: relative;
+}
+
+.add_community{
+    /* background-color: var(--textColor); */
+    width: 700px;
+    height: 610px;
+    margin: 60px auto;
+    background-color: var(--lightColor);
+    border-radius: 10px;
+    position: relative;
+}
+
+.add_community_btn{
+    margin-left: 700%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.community_form{
+    padding: 50px;
+}
+
+.close_btn{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--lightColor);
+    font-size: 20px;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    max-width: 100%;
+}
+
+.row input {
+    width: 80%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: none;
+    transition: none;
+}
+
+.row input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.row input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.row button {
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background: #0d4466;
+    border: 1px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-out;
+}
+
+.row button:hover {
+    opacity: 0.8;
+}
+
+.font{
+    font-size: 30px;
+}
+
+input.input_border{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 9px;
+}
+
+.add_btn{
+    font-size: 25px;
+}

@@ -1,0 +1,59 @@
+.containerPage{
+    display: flex;
+  }
+  
+  .left {
+    width: 45%;
+   justify-items: center;
+    margin-top: 160px;
+    margin-left: 100px;
+  
+  }
+  .right{
+    width: 50%;
+  }
+  .left h1{
+    font-size: 40px;
+    color: #f7b63e;
+    font-weight: bold;
+  }
+  .left h2{
+  
+    font-size: 30px;
+    color: #0d4466;
+    margin-bottom: 8px;
+  }
+  .left p{
+    color: #0d4466;
+    
+  }
+  .left button{
+    background-color:#d8eaf7;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: larger;
+    border-radius: 8px;
+  }
+
+.start-btn{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+  .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 16px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    margin-bottom: 0;
+    
+  } 

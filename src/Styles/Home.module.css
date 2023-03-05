@@ -1,0 +1,62 @@
+.homePage {
+    display: flex;
+}
+
+.home_sidebar {
+    width: 400px;
+    height: 89.2vh;
+    background-color: var(--secondaryDarkColor);
+    color: var(--textColor);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-items: center;
+}
+
+.home_header {
+    display: inline-flex;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.user_profileIcon {
+    margin-right: 5px;
+    width: 45px;
+    height: 40px;
+    border-radius: 100px
+}
+
+hr {
+    color: var(--textColor);
+    z-index: 0;
+}
+
+.my_communities{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.my_communities:hover{
+    background-color: var(--primaryDarkColor);
+    cursor: pointer;
+}
+
+.print_communities{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.chat_screen{
+    background-color: var(--textColor);
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100px;
+        overflow-wrap: break-word;
+    }
+}

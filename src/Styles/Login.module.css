@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
+
+body {
+    font-family: "work sans";
+}
+
+/* Forgot Password.jsx */
+.backRedirect {
+    display: flex;
+    justify-content: right;
+    margin-right: 1rem;
+    padding-bottom: 20px
+}
+
+.forgotPassword{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.forgotPassword > #forgot{
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 110%;
+}
+
+/* Login.jsx */
+.loginForm {
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 700px;
+    width: 30%;
+    height: 60%;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form_header {
+    text-align: center;   
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    max-width: 100%;
+}
+
+.row input {
+    width: 80%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: inset 0px -3px 0px 0px rgba(187, 187, 187, 0.2);
+    transition: box-shadow 0.2s ease-in;
+}
+
+.row input:focus {
+    box-shadow: inset 0px -3px 0px 0px rgba(34, 193, 195, 0.7);
+    outline: none;
+}
+
+.row input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.row button {
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background: #0d4466;
+    border: 1px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-out;
+}
+
+.row button:hover {
+    opacity: 0.8;
+}
+
+.row_updated{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 2rem;
+    max-width: 100%;
+    position: relative;
+    margin-left: 3.3vw;
+}
+
+.print_error{
+    max-width: 100%;
+    width: 80%;
+    padding-left: 2rem;
+    margin-bottom: -10px;
+    color: red;
+}
+
+.donot{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.eyeChange{
+    position: absolute;
+    top: 55%;
+    right: 8.5%;
+    cursor: pointer;
+    width: 40px
+}
+
+.hr_lines{
+    position: relative;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #0d4466;
+    font-weight: 500;
+}
+
+.hr_lines:before{
+    content: " ";
+    height: 1px;
+    width: 43%;
+    background: #0d4466;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.hr_lines:after{
+    content: " ";
+    height: 1px;
+    width: 43%;
+    background: #0d4466;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.alternate_login {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.continue{
+    background-color: lightblue;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#button {
+    padding-bottom: 1.5rem;
+}
+
+#googleIcon {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.already{
+    text-align: center;
+    padding: 1rem 0;
+}
