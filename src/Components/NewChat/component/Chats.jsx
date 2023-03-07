@@ -47,7 +47,6 @@
 // export default Chats;
 
 
-
 import React, { useState, useEffect,useContext } from 'react';
 import db, { auth } from '../../../firebase';
 import { doc, onSnapshot } from 'firebase/firestore';
@@ -89,11 +88,11 @@ const Chats = () => {
               // const userInfo = chat[1]?.userInfo;
               const displayName = chat[1].displayName || 'Unknown User';
               return(
-                <div className='userChat' key={key} onClick={()=>handleSelect(chat[1].userInfo)}>
+                <div className='userChat' key={key} onClick={()=>handleSelect(chat[1])}>
                 <img src={profilePhoto} alt='' />
                 <div className='userChatInfo'>
                   <span>{displayName}</span>
-                  <p>{chat[1].lastMessage?.text}</p>
+                  {/* <p>{chat[1].lastMessage?.text}</p> // anu logic alag chhe aa na mate change karvu pade */}
                 </div>
               </div>
               )
