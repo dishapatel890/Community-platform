@@ -77,12 +77,14 @@ const Chats = () => {
   const handleSelect = (u)=>{
     dispatch({type:"CHANGE_USER",payload: u})
   }
+ 
+  
   
 
   return (
     <div className='chats'>
       {
-          Object.entries(chats).map((chat,key)=>{
+          Object.entries(chats).sort((a,b)=>b[1].date - a[1].date).map((chat,key)=>{
             if(chat[1].displayName){
               console.log(chat[1])
               // const userInfo = chat[1]?.userInfo;
@@ -92,7 +94,9 @@ const Chats = () => {
                 <img src={profilePhoto} alt='' />
                 <div className='userChatInfo'>
                   <span>{displayName}</span>
-                  {/* <p>{chat[1].lastMessage?.text}</p> // anu logic alag chhe aa na mate change karvu pade */}
+                  <p>{chat[1].lastMessage ? chat[1].lastMessage.text : ''}</p>
+
+                  {/* <p>{chat[1].lastMessage?.text}</p>  */}
                 </div>
               </div>
               )

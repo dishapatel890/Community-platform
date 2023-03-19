@@ -21,7 +21,7 @@ function Navbar() {
 
 				<NavLink className={({ isActive }) => (isActive ? styles.link_active : styles.link)} to='/community'><FaUsers /> Community</NavLink>
 
-				<NavLink className={({ isActive }) => (isActive ? styles.link_active : styles.link)} to='/chat'><BsFillChatSquareTextFill /> Friends</NavLink>
+				<NavLink className={({ isActive }) => (isActive ? styles.link_active : styles.link)} to='/chat'><BsFillChatSquareTextFill /> Chat</NavLink>
 
 				<NavLink className={({ isActive }) => (isActive ? styles.link_active : styles.link)} to='/profile'><RiUserSettingsFill /> Profile </NavLink>
 				

@@ -39,20 +39,23 @@ const Chat = () => {
   }, [data]);
   const getName = async () => {
     const name = await data;
+    console.log(name)
     if (name) {
       setName(name.user.displayName);
       return name.user.displayName;
     }
     return "";
   };
+  
   return (
     <div className="chat">
       <div className="chatInfo">
+
         <span>{name}</span>
       </div>
 
-      <Messages />
-      <Input />
+       <Messages />
+      <Input /> 
     </div>
   );
 };
