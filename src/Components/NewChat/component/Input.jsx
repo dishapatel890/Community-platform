@@ -10,6 +10,7 @@ import {
 import db, { auth,storage } from '../../../firebase';
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+// import attach from '../../../Images/attach.png';
 
 const Input = () => {
   const [text, setText] = useState("");
@@ -84,7 +85,7 @@ const { data } = useContext(ChatContext);
         value={text}
       />
       <div className="send">
-        {/* <img src={Attach} alt="" /> */}
+        {/* <img src={attach} alt="" /> */}
         {/* <input
           type="file"
           style={{ display: "none" }}

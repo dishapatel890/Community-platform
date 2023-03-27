@@ -4,7 +4,7 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Community from './Components/Community';
 import ChatPage from './Components/NewChat/ChatPage';
-import './style.scss';
+import './chatstyle.scss';
 import { Route, Routes, BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import ForgotPassword from './Components/ForgotPassword';
@@ -14,13 +14,16 @@ import ChatScreen_home from './Components/ChatScreen_home';
 import LandingPage from './Components/LandingPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from './Components/Navbar';
 
 const App = () => {  
 
   return (
     <>
       <Router>
+        <Navbar/>
         <Routes>
+          
           <Route path='/' element={<LandingPage />} />
           {/* Private routing for pages: profile, home, community, chat, friend */}
           <Route path='/profile' element={<PrivateRoute />}>

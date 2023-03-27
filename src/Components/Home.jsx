@@ -5,7 +5,7 @@ import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import SearchCommunity from './SearchCommunity.jsx';
 import db, { auth } from '../firebase';
 import { collection, getDocs } from "firebase/firestore";
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import profilePhoto from '../Images/profilePhoto.png';
 import ChatScreen_home from './ChatScreen_home';
 import ChatHeader from './ChatHeader.jsx';
@@ -40,7 +40,7 @@ const Home = () => {
   // Return statement
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.homePage}>
         <div>
           <div className={styles.home_sidebar}>
